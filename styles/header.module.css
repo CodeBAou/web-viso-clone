@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "MarcaFont";
+    src: url("../fonts/GrandifloraOne-Regular.ttf") format("truetype");
+    /* Puedes agregar estilos adicionales como font-weight y font-style si es necesario */
+}
+
+@media(min-width:1200px){
+    .marcaContent{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position:relative;
+        width:20%;
+    }
+    
+    .tituloLogo{
+        font-size:calc(0.8*1vw);
+        max-width:300px;
+        text-align: center;
+        font-family: "MarcaFont";
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        min-width:50%;
+        flex-wrap: nowrap;
+        text-align:left;
+    }
+    
+    .intenMenu{
+        display:flexbox;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin:2%;
+        text-decoration: none;
+        outline: none;
+        color: black;
+        font-size:1.3em;
+    }
+    
+    .intenMenu:hover{
+        border-bottom: 1px solid rgb(100,1,0);
+        color:rgb(100,1,0);
+    }
+    
+    .calidadImg{
+        position:relative;
+        width:100%;
+    }
+}

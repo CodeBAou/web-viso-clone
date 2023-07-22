@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "MarcaFont";
+    src: url("../fonts/GrandifloraOne-Regular.ttf") format("truetype");
+    /* Puedes agregar estilos adicionales como font-weight y font-style si es necesario */
+}
+
+.contentSidebar{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.menuGaleriaContent{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.menuGaleriaContent > a{
+    margin-top:20px;
+    text-decoration: none;
+    color:black;
+    font-size:1.2em;
+    width:80%;
+    text-align:left;
+    border-bottom:1px solid gray;
+}
+
+.menuGaleriaContent > a:hover{
+    color:rgb(100,1,0);
+    border-bottom:1px solid rgb(100,1,0);
+}
+.tituloGaleria{
+    text-align: left;
+    font-size:1.5em;
+}
+
+.sello{
+    position:relative;
+    width:100%;
+    max-width: 290px;
+}
+
