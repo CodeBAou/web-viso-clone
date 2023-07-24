@@ -8,8 +8,8 @@ interface TextColor {
   textColor: string;
 }
 
-const Contacto = (props:TextColor): React.JSX.Element => {
-    return (
+const Contacto = (props: TextColor): React.JSX.Element => {
+  return (
         <div className={styleContacto.contactoContent}>
             <p style={{ color: props.textColor }} >
                 c/ Jose Luis Castro nº3 <br />
@@ -21,7 +21,7 @@ const Contacto = (props:TextColor): React.JSX.Element => {
             <p style= {{ color: props.textColor }} >jlalonso@visoehijos.es</p>
             <p style= {{ color: props.textColor }} >administracion@visoehijos.e</p>
         </div>
-    )
+  )
 }
 
 export default Contacto;

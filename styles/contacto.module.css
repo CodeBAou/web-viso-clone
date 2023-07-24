@@ -1,9 +1,22 @@
+@font-face {
+    font-family: "SourceFont";
+    src: url("../fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    /* Puedes agregar estilos adicionales como font-weight y font-style si es necesario */
+}
+
+@font-face {
+    font-family: "NunitoFont";
+    src: url("../fonts/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
+    /* Puedes agregar estilos adicionales como font-weight y font-style si es necesario */
+}
 .contactoContent > p {
     text-align:content;
+    font-family: SourceFont;
 }
 
 .tituloGaleria{
     text-align: left;
     font-size:1.5em;
+    font-family: NunitoFont;
 }
 

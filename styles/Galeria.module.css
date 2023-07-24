@@ -1,0 +1,30 @@
+.content{
+    position:relative;
+    width:640px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.content > img {
+    margin:10px;
+    width:300px;
+}
+
+.item{
+    position:relative;
+    width:35%;
+    min-height:300px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    margin:10%;
+}
+
+.item > img{
+    position:relative;
+    width:100%;
+    max-width:100%;
+    height:auto;
+}

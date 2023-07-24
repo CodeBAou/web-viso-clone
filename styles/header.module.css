@@ -28,6 +28,7 @@
         min-width:50%;
         flex-wrap: nowrap;
         text-align:left;
+        margin-left:40px;
     }
     
     .intenMenu{

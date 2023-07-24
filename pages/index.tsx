@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/semi */
 import React from 'react';
 import Layout from './layout';
-import InicioCmp from '../components/inicio';
+import InicioCmp from '../components/Inicio';
 
 function Inicio (): React.JSX.Element {
   return (
