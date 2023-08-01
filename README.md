@@ -1,34 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Iniciar
 
-First, run the development server:
+Una simple actualizacion de la web de una empresa de contruccion.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+## Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- HTML5, CSS3, javascript
+- React
+- nextjs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i.pinimg.com/564x/ae/a6/3e/aea63e14297ff69fabb7d95c19ca3fea.jpg)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Cada rectangulo es un componente de react , algunos de estos componentes tienen otros en su interior.
+Cada vez que cambiamos de pagina se reutilizan todos los componentes y solo cambia el rectangulo de PAGES/ROUTE
 
-## Learn More
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i.pinimg.com/564x/ff/ec/4c/ffec4c79d2e4c03b01992b4c62f004c3.jpg)
 
-To learn more about Next.js, take a look at the following resources:
+web Responsive
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i.pinimg.com/564x/76/f7/0d/76f70d44d977aea7a9d50926ff59617d.jpg)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+El diseño del menu hace empuja el contenido hacia la izquerda 
 
-## Deploy on Vercel
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i.pinimg.com/564x/b6/70/70/b670706cbc2c934d4a6b802058a644ad.jpg)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
