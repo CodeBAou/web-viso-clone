@@ -5,11 +5,10 @@ import MaquinariaStyle from '../styles/maquinaria.module.css';
 import Image from 'next/image';
 
 const Maquinaria = (): React.JSX.Element => {
-
-    return(
+  return(
         <div className={MaquinariaStyle.content}>
 
-            <h1 className={MaquinariaStyle.titulo}>Obras</h1>
+            <h1 className={MaquinariaStyle.titulo}>Maquinaria</h1>
 
             <div className={MaquinariaStyle.contentParrafos}>
                 <p>En <b>CONSTRUCCIONES Y ALMACENES MANUEL VISO E HIJOS SL</b>., disponemos en propiedad de un amplio parque de maquinaria, tanto pesada como ligera, así como los medios de transporte necesarios para ubicarla en cualquier punto de las obras.</p>
@@ -25,7 +24,7 @@ const Maquinaria = (): React.JSX.Element => {
             />
 
         </div>
-    )
+  )
 }
 // eslint-disable-next-line @typescript-eslint/semi
 export default Maquinaria;

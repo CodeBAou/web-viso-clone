@@ -15,10 +15,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
             <Header></Header>
-            <main>
+            <main id="mainid">
                 {children}
+                <Sidebar/>
             </main>
-            <Sidebar/>
+            
             <Footer></Footer>
         </>
 

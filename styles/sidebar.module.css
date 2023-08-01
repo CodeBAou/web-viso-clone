@@ -4,41 +4,420 @@
     /* Puedes agregar estilos adicionales como font-weight y font-style si es necesario */
 }
 
-.contentSidebar{
-    display:flex;
-    flex-direction: column;
-    padding-bottom: 100px;
+.menuIcon {
+    position: absolute;
+    top: 0;
+    left: 95vw;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
 }
 
-.menuGaleriaContent{
-    display:flex;
-    flex-direction: column;
-    align-items: left;
+.content {
+    min-width: 290px;
+    padding-right: 30px;
 }
 
-.menuGaleriaContent > a{
-    margin-top:20px;
-    text-decoration: none;
-    color:black;
-    font-size:1.2em;
-    width:80%;
-    text-align:left;
-    border-bottom:1px solid gray;
+@media (min-width:1300px) {
+
+    .content {
+        min-width: 290px;
+        padding-right: 90px;
+    }
+
+    .menuGaleriaContent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .menuGaleriaContent>a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: left;
+        border-bottom: 1px solid gray;
+    }
+
+    .menuGaleriaContent>a:hover {
+        color: rgb(100, 1, 0);
+        border-bottom: 1px solid rgb(100, 1, 0);
+    }
+
+    .tituloGaleria {
+        text-align: left;
+        font-size: 1.5em;
+        color: rgb(100, 1, 0);
+    }
+
+    .sello {
+        position: relative;
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .menuContent {
+        display: none;
+        margin-right:-320px;
+    }
+
+    .tituloMenuSidebar {
+        display: none;
+    }
 }
 
-.menuGaleriaContent > a:hover{
-    color:rgb(100,1,0);
-    border-bottom:1px solid rgb(100,1,0);
-}
-.tituloGaleria{
-    text-align: left;
-    font-size:1.5em;
-    color:rgb(100,1,0);
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1300px) {
+
+    .content {
+        min-width: 290px;
+        padding-right: 30px;
+    }
+
+    .menuGaleriaContent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .menuGaleriaContent>a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: left;
+        border-bottom: 1px solid gray;
+    }
+
+    .menuGaleriaContent>a:hover {
+        color: rgb(100, 1, 0);
+        border-bottom: 1px solid rgb(100, 1, 0);
+    }
+
+    .tituloGaleria {
+        text-align: left;
+        font-size: 1.5em;
+        color: rgb(100, 1, 0);
+    }
+
+    
+    .sello {
+        position: relative;
+        width: 80%;
+        max-width: 290px;
+    }
+
+    .menuIcon {
+        display: block;
+
+    }
+
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-right:-320px;
+    }
+
+    .menuContent>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 2%;
+        text-decoration: none;
+        outline: none;
+        color: black;
+        font-size: 1.3em;
+
+    }
+
+    .menu>a:hover {
+        border-bottom: 1px solid rgb(100, 1, 0);
+        color: rgb(100, 1, 0);
+    }
+
+    @keyframes openMenuAnimation {
+        from {
+            margin-right: -320px
+        }
+
+        to {
+            margin-right: 0px
+        }
+    }
+
+    @keyframes closeMenuAnimation {
+        from {
+            margin-right: 0px;
+        }
+
+        to {
+            margin-right: -320px
+        }
+    }
+
+    .openMenu {
+        animation-name: openMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        padding-right: 30px;
+        width: 290px;
+        margin-left: 10px;
+        animation-fill-mode: forwards;
+    }
+
+    .closeMenu {
+        animation-name: closeMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        width: 290px;
+        padding-right: 30px;
+        animation-fill-mode: forwards;
+    }
+
+    .tituloMenuSidebar {
+        display: block;
+    }
+
 }
 
-.sello{
-    position:relative;
-    width:100%;
-    max-width: 290px;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:992px) {
+
+    .content {
+        min-width: 290px;
+        padding-right: 30px;
+    }
+
+    .menuGaleriaContent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .menuGaleriaContent>a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: left;
+        border-bottom: 1px solid gray;
+    }
+
+    .menuGaleriaContent>a:hover {
+        color: rgb(100, 1, 0);
+        border-bottom: 1px solid rgb(100, 1, 0);
+    }
+
+    .tituloGaleria {
+        text-align: left;
+        font-size: 1.5em;
+        color: rgb(100, 1, 0);
+    }
+
+    .sello {
+        position: relative;
+        width: 100%;
+        max-width: 290px;
+    }
+
+   
+    .sello {
+        position: relative;
+        width: 80%;
+        max-width: 290px;
+    }
+
+
+    @keyframes openMenuAnimation {
+        from {
+            margin-right: -320px
+        }
+
+        to {
+            margin-right: 0px
+        }
+    }
+
+    @keyframes closeMenuAnimation {
+        from {
+            margin-right: 0px;
+        }
+
+        to {
+            margin-right: -320px
+        }
+    }
+
+    .openMenu {
+        animation-name: openMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        padding-right: 30px;
+        width: 290px;
+        margin-left: 10px;
+        animation-fill-mode: forwards;
+    }
+
+    .closeMenu {
+        animation-name: closeMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        width: 290px;
+        padding-right: 30px;
+        animation-fill-mode: forwards;
+    }
+
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-right:-320px;
+    }
+
+    .menuContent>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 2%;
+        text-decoration: none;
+        outline: none;
+        color: black;
+        font-size: 1.3em;
+
+    }
+
+    .menu>a:hover {
+        border-bottom: 1px solid rgb(100, 1, 0);
+        color: rgb(100, 1, 0);
+    }
+
+    .tituloMenuSidebar {
+        display: block;
+    }
 }
 
+@media (max-width: 768px) {
+
+    .content {
+        min-width: 290px;
+        padding-right: 30px;
+        width: 90vw;
+    }
+
+    .menuGaleriaContent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .menuGaleriaContent>a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: left;
+        border-bottom: 1px solid gray;
+    }
+
+    .menuGaleriaContent>a:hover {
+        color: rgb(100, 1, 0);
+        border-bottom: 1px solid rgb(100, 1, 0);
+    }
+
+    .tituloGaleria {
+        text-align: left;
+        font-size: 1.5em;
+        color: rgb(100, 1, 0);
+    }
+
+   
+    .sello {
+        position: relative;
+        width: 80%;
+        max-width: 290px;
+    }
+
+    .menuIcon {
+        display: block;
+        left: 80vw;
+    }
+
+    @keyframes openMenuAnimation {
+        from {
+            margin-right: -320px
+        }
+
+        to {
+            margin-right: 320px
+        }
+    }
+
+    @keyframes closeMenuAnimation {
+        from {
+            margin-right: 360px;
+        }
+
+        to {
+            margin-right: -320px
+        }
+    }
+
+    .openMenu {
+        animation-name: openMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        padding-right: 30px;
+        width: 290px;
+        margin-left: 10px;
+        animation-fill-mode: forwards;
+    }
+
+    .closeMenu {
+        animation-name: closeMenuAnimation;
+        animation-duration: 2s;
+        min-width: 290px;
+        width: 290px;
+        padding-right: 30px;
+        animation-fill-mode: forwards;
+    }
+
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-right:-320px;
+    }
+
+    .menuContent>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 2%;
+        text-decoration: none;
+        outline: none;
+        color: black;
+        font-size: 1.3em;
+
+    }
+
+    .menu>a:hover {
+        border-bottom: 1px solid rgb(100, 1, 0);
+        color: rgb(100, 1, 0);
+    }
+
+    .tituloMenuSidebar {
+        display: block;
+    }
+
+}

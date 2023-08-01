@@ -24,7 +24,7 @@ const ObrasCmp = (): React.JSX.Element => {
             <p>En <b>VISO E HIJOS</b> estamos comprometidos con la mejora continua en todas las actividades y procesos desarrollados por la Empresa, para lo cual tenemos establecido un sistema de Gestión de Calidad basado en la Norma UNE-EN ISO 9001:2008, y un sistema de Gestión Medioambiental basado en la Norma UNE-EN ISO 14001:2004</p>
         </div>
 
-        <Galeria arrImg={imgObras}/>
+        <Galeria w="300px" arrImg={imgObras}/>
 
     </div>
   )
